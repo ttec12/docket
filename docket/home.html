@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Docket Management System</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Docket Management System</h1>
+<form>
+  <label for="docket-number">Docket Number</label>
+  <input type="text" id="docket-number" name="docket-number" required><br><br>
+
+  <label for="case-type">Case Type</label>
+  <select id="case-type" name="case-type" required>
+   <option value="">--Select--</option>
+   <option value="Civil">Civil</option>
+   <option value="Criminal">Criminal</option>
+   <option value="Family">Family</option>
+   <option value="Corporate">Corporate</option>
+  </select><br><br>
+
+  <label for="client-name">Client Name</label>
+  <input type="text" id="client-name" name="client-name" required><br><br>
+
+  <label for="case-details">Case Details</label>
+  <textarea id="case-details" name="case-details" required></textarea><br><br>
+
+  <input type="submit" value="Add Docket">
+</form>
+
+<table>
+  <tr>
+   <th>Docket Number</th>
+   <th>Case Type</th>
+   <th>Client Name</th>
+   <th>Case Details</th>
+  </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
